@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - Empresa de Autos Usados</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>AutoSelect</h1>
+    </header>
+
+    <!-- Formulario de contacto -->
+    <main>
+        <h2>Contáctanos</h2>
+        <p>Por favor, llena el siguiente formulario para contactarnos:</p>
+        <form action="#" method="post">
+            <!-- Campo para el nombre -->
+            <label for="nombre">Nombre del cliente:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+            <!-- Campo para el celular -->
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" name="celular" placeholder="10 dígitos" pattern="[0-9]{10}" required>
+
+            <!-- Campo para el correo -->
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+            <!-- Selección de tipo de servicio o producto -->
+            <label for="servicio">Tipo de servicio o producto:</label>
+            <select id="servicio" name="servicio" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="compra">Compra de auto</option>
+                <option value="venta">Venta de auto</option>
+                <option value="otros">Otros</option>
+            </select>
+
+            <!-- Campo para la cantidad -->
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" placeholder="Especifica cantidad" min="1" required>
+
+            <!-- Opciones de forma de pago -->
+            <label for="pago">Forma de pago:</label>
+            <select id="pago" name="pago" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="tarjeta">Tarjeta</option>
+                <option value="deposito">Depósito</option>
+                <option value="oxxo">Pago en Oxxo</option>
+            </select>
+
+            <!-- Botones de acción -->
+            <div class="botones">
+                <button type="submit" class="enviar">Enviar</button>
+                <button type="reset" class="borrar">Borrar</button>
+            </div>
+        </form>
+		<div style="text-align: center; margin-top: 20px;">
+        <button type="button" onclick="window.location.href='index.html'">Regresar a la página principal</button>
+    </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Desarrolladores: Armando Reyes Quezada <BR>
+Ulises Abimael Guerrero Anguiano <BR>
+Oscar Enrique Arguello Pastor<BR>
+Crithian Sahid Rodriguez Ramos  </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Estilo para el encabezado con imagen */
+header {
+    width: 100%;
+    height: 400px; /* Altura de la imagen */
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+    display: block;
+}
+
+/* Estilos para el menú */
+nav {
+    background-color: #213ac7;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #4b4db6;
+    transform: scale(1.05);
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #301dd8;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+ .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50Svh; /* Opcional: para centrar verticalmente en toda la página */
+        }
+        .rounded-image {
+            width: 550px;
+            height: 250px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
